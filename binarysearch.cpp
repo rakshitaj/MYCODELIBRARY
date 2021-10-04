@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int bs(int ar[],int n,int key)
+int bs(int ar[],int n,int key)     //iterative
 {
     int low,high,mid;
     low=0;
@@ -17,7 +17,7 @@ int bs(int ar[],int n,int key)
     }
     return -1;
 }
-int bsr (int ar[], int key, int low , int high)
+int bsr (int ar[], int key, int low , int high) //recurssion
 {
     if (low<=high)
     {
@@ -43,7 +43,7 @@ void display(int arr[],int n)
     printf("\n");
 }
 
-void check(int key)
+void check(int key)    //function if the key is present or no
 {
     if (key>0)
         printf("%d is found\n",key);
