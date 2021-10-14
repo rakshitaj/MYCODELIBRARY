@@ -18,6 +18,19 @@ long int fib(int n,long int c[])
             return c[n];
     }
 }
+
+int iterfib(int n) //iterarive
+{
+    int f[n+1];
+    f[0]=0;
+    f[1]=1;
+    
+    for (int i=2;i<=n;i++)
+        f[n]=f[n-1]+f[n-2];
+    return f[n];
+}
+
+
 int main() {
   
     printf("Enter the nth number \n");
